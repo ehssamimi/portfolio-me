@@ -11,30 +11,28 @@ export default function ProjectsSection() {
         "A simple e-commerce website inspired by Zarinpal, built using only HTML and CSS. It was one of my first projects and is part of my portfolio to showcase early work and growth in web development",
       image: "/projects/zarinpal.png",
       tags: ["HTML", "CSS.module", " Responsive Design"],
-      github: "#",
+      // github: "#",
       demo: "https://gleeful-ganache-ec0db5.netlify.app",
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: " Delta.app",
       description:
-        "Collaborative task management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
-      tags: ["React", "Firebase", "Tailwind"],
-      github: "#",
-      demo: "#",
+        "I recreated the landing page of Delta.app using Next.js and Tailwind CSS to practice building pixel-perfect, responsive interfaces. The goal of this project was to replicate the modern and clean design of the original site while focusing on component structure, layout optimization, and responsive design",
+      image: "/projects/homepage.png",
+      tags: ["NEXT.JS", "Tailwind css", " Responsive Design"],
+      // github: "#",
+      demo: "https://tourmaline-bunny-6ae6e6.netlify.app",
     },
     {
       id: 3,
-      title: "Weather Dashboard",
+      title: "Book Store Demo App",
       description:
-        "Beautiful weather application with real-time data, forecasts, and interactive maps powered by multiple weather APIs.",
-      image:
-        "https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop",
-      tags: ["Next.js", "API", "Chart.js"],
-      github: "#",
-      demo: "#",
+        "A responsive Book Store web app built with React and CSS. It includes a separate search page, detailed product pages with comments, user authentication (login & signup), favorites, cart system, and advanced filtering options.This is a demo version, so some features are not fully functional yet.",
+      image: "/projects/book.png",
+      tags: ["React.js", "Axios", "Fake Api", "Css Module"],
+      // github: "#",
+      demo: "https://steady-treacle-0fd54a.netlify.app",
     },
   ];
 
@@ -71,20 +69,22 @@ export default function ProjectsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
 
-                {/* Hover Overlay with Icons */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
+                {/* Hover Overlay with Icons - MODIFIED: Hidden on mobile (sm) */}
+                <div className="absolute inset-0 hidden md:flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+                  {/* <a
                     href={project.github}
                     className="p-3 bg-white/90 rounded-full hover:bg-white transform hover:scale-110 transition-all duration-200 shadow-lg"
                     aria-label="View GitHub"
+                    onClick={(e) => e.stopPropagation()} // Prevent click-through
                   >
                     <Github className="text-gray-900" size={20} />
-                  </a>
+                  </a> */}
                   <a
                     target="_blank"
                     href={project.demo}
                     className="p-3 bg-blue-600 rounded-full hover:bg-blue-700 transform hover:scale-110 transition-all duration-200 shadow-lg"
                     aria-label="View Demo"
+                    onClick={(e) => e.stopPropagation()} // Prevent click-through
                   >
                     <ExternalLink className="text-white" size={20} />
                   </a>
@@ -111,6 +111,32 @@ export default function ProjectsSection() {
                     </span>
                   ))}
                 </div>
+
+                {/* --- NEW: Mobile-only Links --- */}
+                {/* Visible on sm, hidden on md and up */}
+                <div className="flex md:hidden items-center gap-3 mt-5">
+                  {/* <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border-white/10 border-1 text-gray-300 rounded-xl text-sm font-medium hover:bg-white/20 transition-colors"
+                    aria-label="View GitHub"
+                  >
+                    <Github size={16} />
+                    <span>GitHub</span>
+                  </a> */}
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-medium hover:bg-blue-700 transition-colors"
+                    aria-label="View Demo"
+                  >
+                    <ExternalLink size={16} />
+                    <span>Demo</span>
+                  </a>
+                </div>
+                {/* --- End of Mobile-only Links --- */}
               </div>
 
               {/* Decorative Corner Accent */}
@@ -120,7 +146,7 @@ export default function ProjectsSection() {
         </div>
 
         {/* View All Projects Button */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <Link
             href="/allproject"
             className="group inline-flex items-center space-x-3 px-8 py-4 bg-white/10 backdrop-blur-md border-white/10 border-1 text-gray-300 rounded-3xl hover:bg-white/20 transform hover:scale-105 transition-all duration-500"
@@ -131,7 +157,7 @@ export default function ProjectsSection() {
               size={22}
             />
           </Link>
-        </div>
+        </div> */}
 
         {/* Decorative Background Elements */}
         <div className="absolute left-0 top-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
