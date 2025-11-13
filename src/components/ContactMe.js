@@ -107,7 +107,7 @@ const ContactMe = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-gray-100 dark:text-white sm:text-4xl">
             Get In Touch
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-400 max-w-2xl mx-auto">
@@ -120,10 +120,10 @@ const ContactMe = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2  gap-12 bg-white/5 backdrop-blur-sm border-white/10 border-1 text-gray-300 rounded-3xl  p-8 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
             {/* Contact Information */}
             <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h3 className="text-2xl font-bold text-gray-300 dark:text-white mb-6">
                 Contact Information
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-8">
+              <p className="text-gray-400 dark:text-gray-400 mb-8">
                 Feel free to reach out via email or connect with me on social
                 media. I'll get back to you as soon as possible.
               </p>
@@ -133,7 +133,7 @@ const ContactMe = () => {
                   className="flex items-center gap-4 group"
                 >
                   <MailIcon />
-                  <span className="text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
+                  <span className="text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
                     maysamghaysari96@gmail.com
                   </span>
                 </a>
@@ -144,7 +144,7 @@ const ContactMe = () => {
                   className="flex items-center gap-4 group"
                 >
                   <LinkedinIcon />
-                  <span className="text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
+                  <span className="text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
                     LinkedIn Profile
                   </span>
                 </a>
@@ -155,7 +155,7 @@ const ContactMe = () => {
                   className="flex items-center gap-4 group"
                 >
                   <GithubIcon />
-                  <span className="text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
+                  <span className="text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
                     GitHub Profile
                   </span>
                 </a>
@@ -167,7 +167,7 @@ const ContactMe = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-300 dark:text-gray-300 mb-2"
                 >
                   Name
                 </label>
@@ -184,7 +184,7 @@ const ContactMe = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-300 dark:text-gray-300 mb-2"
                 >
                   Email
                 </label>
@@ -201,7 +201,7 @@ const ContactMe = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-300 dark:text-gray-300 mb-2"
                 >
                   Message
                 </label>

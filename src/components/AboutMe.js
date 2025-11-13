@@ -59,16 +59,16 @@ const AboutMe = () => {
 
           {/* Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left  bg-white/4 backdrop-blur-sm border-white/10 border-1 text-gray-300 rounded-3xl hover:bg-white/10 p-4 transition-all duration-300">
-            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl mb-4">
+            <h2 className="text-3xl font-extrabold text-gray-100 dark:text-white sm:text-4xl mb-4">
               About Me
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-400 dark:text-gray-400 mb-6 leading-relaxed">
               I'm a passionate frontend developer dedicated to creating
               beautiful, intuitive, and high-performance web applications. My
               journey in tech is driven by a love for clean code, elegant
               design, and solving complex problems.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 dark:text-gray-400 mb-8 leading-relaxed">
               Beyond coding, I enjoy exploring the latest technology trends and
               contributing to open-source projects. My goal is to leverage my
               skills to build meaningful products that make a difference.
