@@ -89,7 +89,7 @@ export default function SkillsSection() {
             return (
               <div
                 key={index}
-                className="group bg-white/5 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/10 p-6 transition-all duration-300 hover:-translate-y-1"
+                
               >
                 <div className="flex flex-col items-center space-y-3">
                   <div
