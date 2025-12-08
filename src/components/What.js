@@ -86,7 +86,7 @@ const WhatIDo = () => {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* هدر بخش */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-white">What I Do</h2>
+          <h2 className="text-4xl  text-white">What I Do</h2>
           <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
             I create smooth, aesthetic, and high-performance web experiences
             using modern frontend technologies.
