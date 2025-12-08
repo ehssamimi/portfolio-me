@@ -102,7 +102,7 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className=" py-20 sm:py-28 font-sans max-w-[1280px] m-auto"
+      className=" py-20 sm:py-28 font-sans max-w-[1280px] m-auto mt-[-80]"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -110,13 +110,15 @@ const ContactMe = () => {
           <h2 className="text-3xl font-extrabold text-gray-100 dark:text-white sm:text-4xl">
             Get In Touch
           </h2>
+          <div className="w-40 h-1 bg-blue-500 mt-4 mx-auto"></div>
+
           <p className="mt-4 text-lg leading-6 text-gray-400 max-w-2xl mx-auto">
             I'm always open to discussing new projects, creative ideas, or
             opportunities to be part of your vision.
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto ">
           <div className="grid grid-cols-1 lg:grid-cols-2  gap-12 bg-white/5 backdrop-blur-sm border-white/10 border-1 text-gray-300 rounded-3xl  p-8 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
             {/* Contact Information */}
             <div className="flex flex-col justify-center">
@@ -129,12 +131,12 @@ const ContactMe = () => {
               </p>
               <div className="space-y-6">
                 <a
-                  href="mailto:hello@example.com"
+                  href="maysamghaysari80@gmail.com"
                   className="flex items-center gap-4 group"
                 >
                   <MailIcon />
                   <span className="text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
-                    maysamghaysari96@gmail.com
+                    maysamghaysari80@gmail.com
                   </span>
                 </a>
                 <a

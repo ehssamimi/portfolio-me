@@ -1,4 +1,4 @@
-import AboutMe from "@/components/AboutMe";
+import About from "@/components/About";
 import ContactMe from "@/components/ContactMe";
 import Footer from "@/components/Footer";
 import HeroAbout from "@/components/HeroAbout";
@@ -15,7 +15,7 @@ export default function Home() {
       <WhatIDo />
       <ProjectsSection />
       <SkillsSection />
-      <AboutMe />
+      <About />
       <ContactMe />
       <Footer />
     </>

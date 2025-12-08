@@ -1,7 +1,27 @@
 "use client";
+import { Github } from "lucide-react";
 import { Download, Mail, ArrowDown } from "lucide-react";
+import { Twitter, Instagram, Linkedin } from "lucide-react";
 
 export default function HeroAbout() {
+  const socialLinks = [
+    { icon: Twitter, href: "#", label: "Twitter" },
+    {
+      icon: Github,
+      href: "https://github.com/Maysam-Ghaysari",
+      label: "Facebook",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/maysam_ghaysarii?igsh=MXZhemY3dXJkeDdjbQ==",
+      label: "Instagram",
+    },
+    {
+      icon: Linkedin,
+      href: "https://linkedin.com/in/maysam-ghaysari-227676367",
+      label: "LinkedIn",
+    },
+  ];
   const downloadResume = () => {
     const link = document.createElement("a");
     link.href = "/Resume/MyResume.pdf";
@@ -11,57 +31,76 @@ export default function HeroAbout() {
     document.body.removeChild(link);
   };
   return (
-    <section className="relative h-screen w-full overflow-hidden">
-      {/* <div className="fixed top-50 left-180 w-96 h-96 bg-gray-500 rounded-full blur-[130px]" /> */}
-      <div className="max-sm:hidden absolute -top-12 -left-32 w-166 h-126 bg-blue-900 rounded-full blur-[120px] " />
+    <section className="relative h-screen w-full">
+      {/* --- تغییر اصلی اینجا ---
+        1. absolute تبدیل شد به fixed
+        2. z-0 اضافه شد تا زیر متن‌ها باشد
+        3. pointer-events-none اضافه شد تا عکس مانع کلیک روی دکمه‌ها نشود
+      */}
+      <div className="fixed right-0 bottom-0 w-1/3 h-full hidden lg:block opacity-30 z-0 pointer-events-none">
+        <img
+          src="/Me/1000009466.jpg"
+          alt="عکس پس زمینه"
+          className="h-full w-full object-cover object-left"
+          style={{ boxShadow: "-18px 0 130px rgba(220,220,220,0.9)" }}
+        />
+      </div>
 
-      {/* Content Container */}
+      {/* دایره‌های بلور شده (تزئینی) */}
+      {/* برای اینکه این‌ها هم فیکس بمانند، می‌توانید به آن‌ها هم fixed بدهید، یا اگر می‌خواهید اسکرول شوند absolute بمانند */}
+      <div className="fixed max-sm:hidden -top-12 -left-32 w-166 h-126 bg-blue-900 rounded-full blur-[120px] -z-10" />
+
+      {/* --- کانتینر محتوا ---
+        باید relative و z-index بالاتر داشته باشد تا روی عکس دیده شود
+      */}
       <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Greeting with fade-in effect */}
-          <div className="mb-16 animate-fadeIn">
-            <span className="inline-block px-4 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full text-blue-200 text-sm font-medium tracking-wide">
-              Welcome to my portfolio
-            </span>
-          </div>
+        <div className="max-w-4xl mx-auto text-center min-md:ml-40">
+          {/* Greeting */}
+          <div className="mb-16 animate-fadeIn"></div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight animate-fadeIn">
-            Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl max-sm:text-5xl md:text-6xl lg:text-8xl text-white mb-4 leading-tight animate-fadeIn">
+            <span className="bg-white bg-clip-text text-transparent font-[Caveat]">
               Maysam Ghaysari
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-blue-100 font-light mb-6 animate-fadeIn">
+          <p className="text-xl sm:text-2xl md:text-3xl text-blue-100 font-light mb-6 animate-fadeIn font-[raleway]">
             Frontend Developer
           </p>
 
-          {/* Description */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed animate-fadeIn">
-            Specializing in{" "}
-            <span className="text-blue-300 font-semibold">Next.js</span> and{" "}
-            <span className="text-purple-300 font-semibold">Tailwind CSS</span>.
-            Crafting beautiful, responsive, and performant web experiences that
-            bring ideas to life.
-          </p>
+          {/* Social Media */}
+          <div className="flex gap-4 justify-center">
+            {/* کدهای Social Links شما */}
+            {socialLinks.map((social, index) => {
+              const Icon = social.icon;
+              return (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="w-10 h-10 flex items-center justify-center text-gray-300 hover:text-cyan-500 transition-colors duration-300"
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              );
+            })}
+          </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fadeIn">
-            {/* Download Resume Button */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-22 mt-22 animate-fadeIn">
             <button
+              type="button"
               onClick={downloadResume}
-              className="group w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4  bg-white/6 backdrop-blur-sm border-1 border-white/10 text-gray-300 rounded-full hover:bg-white/20  transform hover:scale-105 hover:shadow-2xl transition-all duration-500 font-semibold text-lg "
+              className="group w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 font-semibold text-lg"
             >
               <Download size={22} className="group-hover:animate-bounce" />
               <span>Download Resume</span>
             </button>
 
-            {/* Contact Me Button */}
             <a
               href="#contact"
-              className="group w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 bg-white/6 backdrop-blur-sm border-1 border-white/10 border-1 border-gray-500 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 transition-all duration-500 font-semibold text-lg"
+              className="group w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 transition-all duration-500 font-semibold text-lg"
             >
               <Mail
                 size={22}
@@ -72,17 +111,11 @@ export default function HeroAbout() {
           </div>
 
           {/* Scroll Down Indicator */}
-          <div className="animate-bounce">
-            <ArrowDown
-              className="mx-auto text-white/60 max-sm:mt-40"
-              size={32}
-            />
+          <div className="animate-bounce mt-10">
+            <ArrowDown className="mx-auto text-white/60" size={32} />
           </div>
         </div>
       </div>
-
-      {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32"></div>
     </section>
   );
 }
