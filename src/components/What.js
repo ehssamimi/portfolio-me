@@ -1,79 +1,26 @@
 "use client";
 import { motion } from "framer-motion";
+import { PiCode } from "react-icons/pi";
+import { MdNetworkCheck } from "react-icons/md";
+import { GrProjects } from "react-icons/gr";
 import React from "react";
-
-// --- آیکون‌ها بدون تغییر ---
-const CodeIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="h-10 w-10 text-indigo-400"
-  >
-    <polyline points="16 18 22 12 16 6"></polyline>
-    <polyline points="8 6 2 12 8 18"></polyline>
-  </svg>
-);
-
-const BriefcaseIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="h-10 w-10 text-indigo-400"
-  >
-    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-  </svg>
-);
-
-const LayersIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="h-10 w-10 text-indigo-400"
-  >
-    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-    <polyline points="2 17 12 22 22 17"></polyline>
-    <polyline points="2 12 12 17 22 12"></polyline>
-  </svg>
-);
 
 const WhatIDo = () => {
   const services = [
     {
-      icon: <CodeIcon />,
+      icon: <PiCode className="size-8 mr-1" />,
       title: "Clean & Organized Code",
       description:
         "I write clean, well-documented, and scalable code following best practices for long-term maintainability.",
     },
     {
-      icon: <BriefcaseIcon />,
+      icon: <MdNetworkCheck className="size-8 mr-2" />,
       title: "1 Year of Experience", // اصلاح گرامری: Years -> Year
       description:
         "Three years of solid experience in frontend development and UI design using modern frameworks.",
     },
     {
-      icon: <LayersIcon />,
+      icon: <GrProjects className="size-7 mr-2" />,
       title: "Real-World Projects",
       description:
         "Hands-on experience building real products with performance, accessibility, and design in mind.",
@@ -107,7 +54,7 @@ const WhatIDo = () => {
               animate={{ opacity: 1, y: 0 }} // پایان انیمیشن
               transition={{ duration: 0.9, delay: index * 0.4 }} // زمان و تاخیر
             >
-              <div className="flex items-center justify-center h-16 w-16 mb-6 rounded-full bg-indigo-100/30 border border-white/30 shadow-inner">
+              <div className="flex items-center justify-center h-16 w-16 mb-6 rounded-[15%_90%_30%_30%] bg-indigo-100/30 border border-white/30 shadow-inner">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-white mb-3">
