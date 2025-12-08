@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X,  } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +14,10 @@ export default function Navbar() {
           {/* Logo / Brand */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center space-x-2 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-transform duration-200">
-                <span className="text-white font-bold text-xl">M</span>
+              <div className="w-10 h-10 bg-[#0b3150] rounded-full flex items-center justify-center transform group-hover:scale-105 transition-transform duration-200">
+                <span className="text-white text-xl font-[raleway] ">M</span>
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent sm:block">
+              <span className="text-xl font-[raleway]  bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent sm:block">
                 Maysam Ghaysari
               </span>
             </a>
