@@ -102,7 +102,7 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className=" py-20 sm:py-28 font-sans max-w-[1280px] m-auto mt-[-80]"
+      className=" py-20 sm:py-28 max-w-[1280px] m-auto mt-[-80] font-[raleway]"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}

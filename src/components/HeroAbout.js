@@ -92,15 +92,15 @@ export default function HeroAbout() {
             <button
               type="button"
               onClick={downloadResume}
-              className="group w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 font-semibold text-lg"
+              className="group w-full sm:w-auto flex items-center font-[raleway] justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 font-semibold text-lg"
             >
-              <Download size={22} className="group-hover:animate-bounce" />
+              <Download size={22} className="group-hover:animate-bounce " />
               <span>Download Resume</span>
             </button>
 
             <a
               href="#contact"
-              className="group w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 transition-all duration-500 font-semibold text-lg"
+              className="group w-full font-[raleway] sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 transition-all duration-500 font-semibold text-lg"
             >
               <Mail
                 size={22}

@@ -31,7 +31,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <div className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50]  ">
+    <div className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50] font-[raleway]  ">
       <div className="min-h-screen py-16 px-4 max-sm:mt-[-100] max-w-[1280px] m-auto ">
         {/* Header */}
         <div className="text-center mb-12">

@@ -37,7 +37,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50]">
+    <section className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50] font-[raleway]">
       <div  className="py-20 px-4 sm:px-6 lg:px-8 max-w-[1280px] m-auto z-20 bg-[#0b1120]">
         {/* Section Header */}
         <div className="text-center mb-16">

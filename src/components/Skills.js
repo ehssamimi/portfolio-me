@@ -67,7 +67,7 @@ export default function SkillsSection() {
   const displayedSkills = showAll ? skills : skills.slice(0, 4);
 
   return (
-    <section className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-90]">
+    <section className="relative font-[raleway] z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-90]">
       <div className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden max-w-[1280px] m-auto max-sm:mt-[-130]">
         {/* Header */}
         <div className="text-center mb-10">

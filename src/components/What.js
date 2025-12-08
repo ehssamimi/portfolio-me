@@ -49,7 +49,7 @@ const WhatIDo = () => {
     // 1. z-20: برای اینکه بیاید روی عکس فیکس شده
     // 2. bg-[#0f172a]: رنگ پس‌زمینه (سرمه‌ای تیره). می‌توانید کد رنگ دقیق تم خودتان را جایگزین کنید.
     // 3. w-full: برای اینکه کل عرض را بپوشاند
-    <section className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50]">
+    <section className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50] font-[raleway]">
       
       {/* کانتینر محدود کننده عرض (Max Width) را اینجا می‌گذاریم */}
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
