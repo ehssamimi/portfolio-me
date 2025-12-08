@@ -97,7 +97,7 @@ export default function RoadmapTimeline() {
         {/* Timeline Container */}
         <div className="relative overflow-hidden py-3 px-2 sm:px-4 md:px-6">
           {/* Horizontal Line */}
-          <div className="absolute top-[20px] sm:top-[25px] md:top-[30px] left-0 right-0 h-[2px] bg-gray-300 border-t-2 border-dashed border-gray-400"></div>
+          <div className="absolute mt-1.5 top-[20px] sm:top-[25px] md:top-[30px] left-0 right-0 h-[2px] bg-gray-900 border-t-2 border-dashed border-gray-400"></div>
 
           {/* Sliding Container */}
           <div
