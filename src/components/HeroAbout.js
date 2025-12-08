@@ -1,8 +1,16 @@
 "use client";
 
-import { Github } from "lucide-react";
-import { Download, Mail, ArrowDown } from "lucide-react";
-import { Twitter, Instagram, Linkedin } from "lucide-react";
+import { useEffect } from "react";
+import {
+  Github,
+  Download,
+  Mail,
+  ArrowDown,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function HeroAbout() {
   const socialLinks = [
@@ -10,7 +18,7 @@ export default function HeroAbout() {
     {
       icon: Github,
       href: "https://github.com/Maysam-Ghaysari",
-      label: "Facebook",
+      label: "GitHub",
     },
     {
       icon: Instagram,
@@ -23,6 +31,7 @@ export default function HeroAbout() {
       label: "LinkedIn",
     },
   ];
+
   const downloadResume = () => {
     const link = document.createElement("a");
     link.href = "/Resume/MyResume.pdf";
@@ -31,44 +40,70 @@ export default function HeroAbout() {
     link.click();
     document.body.removeChild(link);
   };
+
+  // Framer Motion variants برای staggered animation
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
+  const bounceArrow = {
+    animate: { y: [0, 10, 0] },
+    transition: { duration: 1.2, repeat: Infinity, ease: "easeInOut" },
+  };
+
   return (
     <section className="relative h-screen w-full">
+      {/* Background Image */}
       <div className="fixed right-0 bottom-0 w-1/3 h-full hidden lg:block opacity-30 z-0 pointer-events-none">
         <img
           src="/Me/1000009466.jpg"
-          alt="عکس پس زمینه"
+          alt="Background"
           className="h-full w-full object-cover object-left"
           style={{ boxShadow: "-18px 0 130px rgba(220,220,220,0.9)" }}
         />
       </div>
 
-      {/* دایره‌های بلور شده (تزئینی) */}
-      {/* برای اینکه این‌ها هم فیکس بمانند، می‌توانید به آن‌ها هم fixed بدهید، یا اگر می‌خواهید اسکرول شوند absolute بمانند */}
+      {/* Decorative Blur Circles */}
       <div className="fixed max-sm:hidden -top-12 -left-32 w-166 h-126 bg-blue-900 rounded-full blur-[120px] -z-10" />
 
-      {/* --- کانتینر محتوا ---
-        باید relative و z-index بالاتر داشته باشد تا روی عکس دیده شود
-      */}
-      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center min-md:ml-40">
-          {/* Greeting */}
-          <div className="mb-16 animate-fadeIn"></div>
-
-          {/* Main Heading */}
-          <h1 className="text-4xl max-sm:text-5xl md:text-6xl lg:text-8xl text-white mb-4 leading-tight animate-fadeIn">
+      {/* Content */}
+      <motion.div
+        className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        <div className="max-w-4xl mx-auto text-center min-md:ml-40 space-y-6">
+          {/* Name */}
+          <motion.h1
+            variants={fadeUp}
+            className="text-4xl max-sm:text-5xl md:text-6xl lg:text-8xl text-white mb-4 leading-tight"
+          >
             <span className="bg-white bg-clip-text text-transparent font-[Caveat]">
               Maysam Ghaysari
             </span>
-          </h1>
+          </motion.h1>
 
           {/* Subtitle */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-blue-100 font-light mb-6 animate-fadeIn font-[raleway]">
+          <motion.p
+            variants={fadeUp}
+            className="text-xl sm:text-2xl md:text-3xl text-blue-100 font-light font-[raleway]"
+          >
             Frontend Developer
-          </p>
+          </motion.p>
 
           {/* Social Media */}
-          <div className="flex gap-4 justify-center">
-            {/* کدهای Social Links شما */}
+          <motion.div variants={fadeUp} className="flex gap-4 justify-center">
             {socialLinks.map((social, index) => {
               const Icon = social.icon;
               return (
@@ -76,27 +111,32 @@ export default function HeroAbout() {
                   key={index}
                   href={social.href}
                   className="w-10 h-10 flex items-center justify-center text-gray-300 hover:text-cyan-500 transition-colors duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Icon className="w-5 h-5" />
                 </a>
               );
             })}
-          </div>
+          </motion.div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-22 mt-22 animate-fadeIn">
+          <motion.div
+            variants={fadeUp}
+            className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-8"
+          >
             <button
               type="button"
               onClick={downloadResume}
               className="group w-full sm:w-auto flex items-center font-[raleway] justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 hover:shadow-2xl transition-all duration-500 font-semibold text-lg"
             >
-              <Download size={22} className="group-hover:animate-bounce " />
+              <Download size={22} className="group-hover:animate-bounce" />
               <span>Download Resume</span>
             </button>
 
             <a
               href="#contact"
-              className="group w-full font-[raleway] sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 transition-all duration-500 font-semibold text-lg"
+              className="group w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/20 transform hover:scale-105 transition-all duration-500 font-semibold text-lg"
             >
               <Mail
                 size={22}
@@ -104,14 +144,14 @@ export default function HeroAbout() {
               />
               <span>Contact Me</span>
             </a>
-          </div>
+          </motion.div>
 
-          {/* Scroll Down Indicator */}
-          <div className="animate-bounce mt-40">
+          {/* Scroll Down */}
+          <motion.div {...bounceArrow} className="mt-20">
             <ArrowDown className="mx-auto text-white/60" size={32} />
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
