@@ -22,7 +22,7 @@ export default function AboutSection() {
 
   const personalInfo = [
     { icon: Calendar, label: "Birthday", value: "31 March 2001" },
-    { icon: Globe, label: "Website", value: "www.example.com" },
+    { icon: Globe, label: "Website", value: "-" },
     { icon: Phone, label: "Phone", value: "+989383044158" },
     { icon: MapPin, label: "City", value: "saqqez city , Kordestan, IRAN" },
     { icon: GraduationCap, label: "Degree", value: "Pursuing a Bacgelor's degree in IT engineering" },

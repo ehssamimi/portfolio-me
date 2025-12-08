@@ -32,11 +32,7 @@ export default function HeroAbout() {
   };
   return (
     <section className="relative h-screen w-full">
-      {/* --- تغییر اصلی اینجا ---
-        1. absolute تبدیل شد به fixed
-        2. z-0 اضافه شد تا زیر متن‌ها باشد
-        3. pointer-events-none اضافه شد تا عکس مانع کلیک روی دکمه‌ها نشود
-      */}
+
       <div className="fixed right-0 bottom-0 w-1/3 h-full hidden lg:block opacity-30 z-0 pointer-events-none">
         <img
           src="/Me/1000009466.jpg"
@@ -111,7 +107,7 @@ export default function HeroAbout() {
           </div>
 
           {/* Scroll Down Indicator */}
-          <div className="animate-bounce mt-10">
+          <div className="animate-bounce mt-40">
             <ArrowDown className="mx-auto text-white/60" size={32} />
           </div>
         </div>
