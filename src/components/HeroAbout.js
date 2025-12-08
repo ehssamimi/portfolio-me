@@ -1,4 +1,5 @@
 "use client";
+
 import { Github } from "lucide-react";
 import { Download, Mail, ArrowDown } from "lucide-react";
 import { Twitter, Instagram, Linkedin } from "lucide-react";
@@ -32,7 +33,6 @@ export default function HeroAbout() {
   };
   return (
     <section className="relative h-screen w-full">
-
       <div className="fixed right-0 bottom-0 w-1/3 h-full hidden lg:block opacity-30 z-0 pointer-events-none">
         <img
           src="/Me/1000009466.jpg"

@@ -13,12 +13,12 @@ import {
 } from "lucide-react";
 
 export default function AboutSection() {
-  const stats = [
-    { icon: Smile, number: 232, label: "Happy Clients" },
-    { icon: FileText, number: 521, label: "Projects" },
-    { icon: Headphones, number: 1463, label: "Hours Of Support" },
-    { icon: Users, number: 15, label: "Hard Workers" },
-  ];
+  // const stats = [
+  //   { icon: Smile, number: 232, label: "Happy Clients" },
+  //   { icon: FileText, number: 521, label: "Projects" },
+  //   { icon: Headphones, number: 1463, label: "Hours Of Support" },
+  //   { icon: Users, number: 15, label: "Hard Workers" },
+  // ];
 
   const personalInfo = [
     { icon: Calendar, label: "Birthday", value: "31 March 2001" },
@@ -35,7 +35,7 @@ export default function AboutSection() {
       <div className="min-h-screen py-16 px-4 max-sm:mt-[-100] max-w-[1280px] m-auto ">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-100 mb-4">About</h1>
+          <h1 className="text-4xl  text-gray-100 mb-4">About</h1>
           <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
         </div>
 

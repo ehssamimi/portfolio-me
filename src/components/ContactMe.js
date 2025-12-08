@@ -107,7 +107,7 @@ const ContactMe = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold text-gray-100 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl text-gray-100 dark:text-white sm:text-4xl">
             Get In Touch
           </h2>
           <div className="w-40 h-1 bg-blue-500 mt-4 mx-auto"></div>

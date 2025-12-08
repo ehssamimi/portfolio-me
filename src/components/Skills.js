@@ -14,6 +14,7 @@ import { GrGraphQl } from "react-icons/gr";
 import { CiGrid42 } from "react-icons/ci";
 import { DiResponsive } from "react-icons/di";
 import { IoServerOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 export default function SkillsSection() {
   const [showAll, setShowAll] = useState(false);
@@ -28,7 +29,6 @@ export default function SkillsSection() {
     },
     { name: "HTML", color: "from-orange-500 to-red-500", icon: RiHtml5Fill },
     { name: "CSS", color: "from-blue-500 to-cyan-500", icon: IoLogoCss3 },
-
     {
       name: "Tailwind CSS",
       color: "from-teal-500 to-cyan-500",
@@ -50,13 +50,11 @@ export default function SkillsSection() {
       color: "from-blue-600 to-blue-800",
       icon: CiGrid42,
     },
-
     {
       name: "Responsive Design",
       color: "from-blue-600 to-blue-800",
       icon: DiResponsive,
     },
-
     {
       name: "Git & GitHub",
       color: "from-purple-500 to-pink-500",
@@ -69,9 +67,8 @@ export default function SkillsSection() {
   return (
     <section className="relative font-[raleway] z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-90]">
       <div className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden max-w-[1280px] m-auto max-sm:mt-[-130]">
-        {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl  text-white mb-4">
             Technical{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Skills
@@ -82,31 +79,31 @@ export default function SkillsSection() {
           </p>
         </div>
 
-        {/* Skills Grid */}
         <div className="grid grid-cols-1 max-sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {displayedSkills.map((skill, index) => {
             const Icon = skill.icon;
             return (
-              <div
+              <motion.div
                 key={index}
-                
+                className="flex flex-col items-center space-y-3"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
               >
-                <div className="flex flex-col items-center space-y-3">
-                  <div
-                    className={`p-3 rounded-xl bg-gradient-to-br ${skill.color} flex items-center justify-center shadow-lg`}
-                  >
-                    <Icon className="text-white" size={28} />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white">
-                    {skill.name}
-                  </h3>
+                <div
+                  className={`p-3 rounded-xl bg-gradient-to-br ${skill.color} flex items-center justify-center shadow-lg`}
+                >
+                  <Icon className="text-white" size={28} />
                 </div>
-              </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {skill.name}
+                </h3>
+              </motion.div>
             );
           })}
         </div>
 
-        {/* Show More Button */}
         <div className="mt-14 flex justify-center">
           <button
             onClick={() => setShowAll(!showAll)}
@@ -117,15 +114,13 @@ export default function SkillsSection() {
         </div>
       </div>
 
-      {/* Background Decorations */}
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl"></div>
       <div className="absolute inset-0 opacity-5">
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
             backgroundSize: "50px 50px",
           }}
         ></div>

@@ -1,24 +1,57 @@
 "use client";
-
+import { motion } from "framer-motion";
 import React from "react";
 
 // --- آیکون‌ها بدون تغییر ---
 const CodeIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10 text-indigo-400">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-10 w-10 text-indigo-400"
+  >
     <polyline points="16 18 22 12 16 6"></polyline>
     <polyline points="8 6 2 12 8 18"></polyline>
   </svg>
 );
 
 const BriefcaseIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10 text-indigo-400">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-10 w-10 text-indigo-400"
+  >
     <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
   </svg>
 );
 
 const LayersIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10 text-indigo-400">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-10 w-10 text-indigo-400"
+  >
     <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
     <polyline points="2 17 12 22 22 17"></polyline>
     <polyline points="2 12 12 17 22 12"></polyline>
@@ -30,30 +63,27 @@ const WhatIDo = () => {
     {
       icon: <CodeIcon />,
       title: "Clean & Organized Code",
-      description: "I write clean, well-documented, and scalable code following best practices for long-term maintainability.",
+      description:
+        "I write clean, well-documented, and scalable code following best practices for long-term maintainability.",
     },
     {
       icon: <BriefcaseIcon />,
       title: "1 Year of Experience", // اصلاح گرامری: Years -> Year
-      description: "Three years of solid experience in frontend development and UI design using modern frameworks.",
+      description:
+        "Three years of solid experience in frontend development and UI design using modern frameworks.",
     },
     {
       icon: <LayersIcon />,
       title: "Real-World Projects",
-      description: "Hands-on experience building real products with performance, accessibility, and design in mind.",
+      description:
+        "Hands-on experience building real products with performance, accessibility, and design in mind.",
     },
   ];
 
   return (
-    // --- تغییرات اصلی اینجاست ---
-    // 1. z-20: برای اینکه بیاید روی عکس فیکس شده
-    // 2. bg-[#0f172a]: رنگ پس‌زمینه (سرمه‌ای تیره). می‌توانید کد رنگ دقیق تم خودتان را جایگزین کنید.
-    // 3. w-full: برای اینکه کل عرض را بپوشاند
     <section className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50] font-[raleway]">
-      
       {/* کانتینر محدود کننده عرض (Max Width) را اینجا می‌گذاریم */}
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* هدر بخش */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-white">What I Do</h2>
@@ -66,13 +96,16 @@ const WhatIDo = () => {
         {/* کارت‌ها */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
               className="relative group p-6 text-gray-200 transition-all duration-500
-                bg-white/5 backdrop-blur-lg
-                border border-white/10
-                rounded-[5%_90%_30%_30%]
-                hover:shadow-lg hover:bg-white/10" // اضافه کردن هاور برای جذابیت بیشتر
+      bg-white/5 backdrop-blur-lg
+      border border-white/10
+      rounded-[5%_90%_30%_30%]
+      hover:shadow-lg hover:bg-white/10"
+              initial={{ opacity: 0, y: 50 }} // شروع انیمیشن
+              animate={{ opacity: 1, y: 0 }} // پایان انیمیشن
+              transition={{ duration: 0.9, delay: index * 0.4 }} // زمان و تاخیر
             >
               <div className="flex items-center justify-center h-16 w-16 mb-6 rounded-full bg-indigo-100/30 border border-white/30 shadow-inner">
                 {service.icon}
@@ -83,7 +116,7 @@ const WhatIDo = () => {
               <p className="text-gray-200 leading-relaxed">
                 {service.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
