@@ -74,7 +74,7 @@ export default function HeroAbout() {
       </div>
 
       {/* Decorative Blur Circles */}
-      <div className="fixed max-sm:hidden -top-12 -left-32 w-166 h-126 bg-blue-900 rounded-full blur-[120px] -z-10" />
+      <div className="fixed max-sm:hidden -top-12 -left-32 w-166 h-126 bg-cyan-700 rounded-full blur-[120px] -z-10" />
 
       {/* Content */}
       <motion.div

@@ -48,7 +48,7 @@ const WhatIDo = () => {
               className="relative group p-6 text-gray-200 transition-all duration-500
       bg-white/5 backdrop-blur-lg
       border border-white/10
-      rounded-[5%_90%_30%_30%]
+      rounded-[4%_25%_4%_25%]
       hover:shadow-lg hover:bg-white/10"
               initial={{ opacity: 0, y: 50 }} // شروع انیمیشن
               animate={{ opacity: 1, y: 0 }} // پایان انیمیشن

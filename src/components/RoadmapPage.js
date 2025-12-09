@@ -83,14 +83,14 @@ export default function RoadmapTimeline() {
 
   return (
     <div className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50] font-[raleway]">
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto max-w-[1280px]">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
           <h1 className="text-3xl sm:text-4xl md:text-5xl  text-gray-100 mb-3 md:mb-4">
             Roadmap
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-cyan-400 px-4">
-            We Translate Your Dream Into Reality
+            I Translate Your Dream Into Reality
           </p>
         </div>
 
