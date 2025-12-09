@@ -7,40 +7,53 @@ export default function RoadmapTimeline() {
 
   const roadmapItems = [
     {
-      date: "January 2023",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
-    },
-    {
-      date: "March 2023",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
+      date: "May 2023",
+      description: "Start Html & Css",
     },
     {
       date: "May 2023",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
+      description: "END Html & Css ",
     },
     {
-      date: "July 2024",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
+      date: "June 2023",
+      description: "Make new Projecet With html & css",
     },
     {
-      date: "September 2024",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
+      date: "August 2023",
+      description: "Start JavaScript ",
     },
     {
-      date: "November 2024",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
+      date: "January 2024",
+      description: "END JavaScript",
     },
     {
-      date: "November 2025",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
+      date: "February 2024",
+      description: "Make a few Project With JavaScript & Html & Css",
     },
     {
-      date: "November 2025",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
+      date: "April 2024",
+      description: "Start React.js ",
     },
     {
-      date: "November 2025",
-      description: "Diam dolor ipsum sit amet erat ipsum lorem sit",
+      date: "December 2024",
+      description: "END React.js ",
+    },
+ 
+    {
+      date: "January 2025",
+      description: "Make Afew Project with React.js",
+    },
+    {
+      date: "May 2025",
+      description: "Start Learning Next.js",
+    },
+    {
+      date: "October 2025",
+      description: "END Next.js",
+    },
+    {
+      date: "December 2025",
+      description: "Make New Project FullStack ",
     },
   ];
 
@@ -61,7 +74,7 @@ export default function RoadmapTimeline() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const maxIndex = Math.max(0, roadmapItems.length - visibleItems);
+  const maxIndex = Math.max(0, roadmapItems.length);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => {
