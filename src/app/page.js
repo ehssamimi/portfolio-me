@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <HeroAbout />
       <WhatIDo />
-      <RoadmapPage/>
+      <RoadmapPage />
       <ProjectsSection />
       <SkillsSection />
       <About />
