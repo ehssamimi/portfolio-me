@@ -39,7 +39,7 @@ export default function ProjectsSection() {
         "Medical Care is a simple and fully responsive healthcare website. It delivers essential medical information with a clean layout and smooth usability across mobile, tablet, and desktop.",
       image: "/projects/Madic-Care.png",
       tags: ["JavaScript ", "Css", "Html", "Responsive"],
-      demo: "https://resilient-sunburst-963f0f.netlify.app",
+      demo: "https://glittering-cendol-3b0b44.netlify.app",
     },
   ];
 
