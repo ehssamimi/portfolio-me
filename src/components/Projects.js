@@ -32,6 +32,15 @@ export default function ProjectsSection() {
       tags: ["React.js", "Axios", "Fake Api", "Css Module"],
       demo: "https://steady-treacle-0fd54a.netlify.app",
     },
+    {
+      id: 4,
+      title: "Madic care",
+      description:
+        "Medical Care is a simple and fully responsive healthcare website. It delivers essential medical information with a clean layout and smooth usability across mobile, tablet, and desktop.",
+      image: "/projects/Madic-Care.png",
+      tags: ["JavaScript ", "Css", "Html", "Responsive"],
+      demo: "https://resilient-sunburst-963f0f.netlify.app",
+    },
   ];
 
   return (
