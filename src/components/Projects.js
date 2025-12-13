@@ -41,6 +41,15 @@ export default function ProjectsSection() {
       tags: ["JavaScript ", "Css", "Html", "Responsive"],
       demo: "https://glittering-cendol-3b0b44.netlify.app",
     },
+    {
+      id: 5,
+      title: "a-world",
+      description:
+        "**A-World** is an engaging platform for travel and camping enthusiasts, offering adventurous experiences, travel tips, and exciting routes in a fully responsive design. Users can easily enjoy travel and camping content on any device.",
+      image: "/projects/a-world.png",
+      tags: ["JavaScript ", "Css", "Html", "Responsive"],
+      demo: "https://clinquant-hummingbird-6d6120.netlify.app",
+    },
   ];
 
   return (
