@@ -57,7 +57,7 @@ export default function ProjectsSection() {
         "At Wealzi, we have taken a new step in providing investment and portfolio management services by creating a secure platform for digital asset investment. We consider it our mission to guide all stages of investment with intelligence and simplicity, enhancing investment capabilities for people from all walks of life.",
       image: "/projects/wealzi.png",
       tags: ["Next.js ", "Tailwind", "Responsive"],
-      demo: "https://polite-toffee-7510f3.netlify.app",
+      demo: "https://tredfi-wealzi.vercel.app",
     },
   ];
 
