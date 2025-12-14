@@ -39,7 +39,7 @@ export default function ProjectsSection() {
         "Medical Care is a simple and fully responsive healthcare website. It delivers essential medical information with a clean layout and smooth usability across mobile, tablet, and desktop.",
       image: "/projects/Madic-Care.png",
       tags: ["JavaScript ", "Css", "Html", "Responsive"],
-      demo: "https://glittering-cendol-3b0b44.netlify.app",
+      demo: "https://medic-care-alpha.vercel.app",
     },
     {
       id: 5,
@@ -48,7 +48,7 @@ export default function ProjectsSection() {
         "**A-World** is an engaging platform for travel and camping enthusiasts, offering adventurous experiences, travel tips, and exciting routes in a fully responsive design. Users can easily enjoy travel and camping content on any device.",
       image: "/projects/a-world.png",
       tags: ["JavaScript ", "Css", "Html", "Responsive"],
-      demo: "https://clinquant-hummingbird-6d6120.netlify.app",
+      demo: "https://a-world-rho.vercel.app",
     },
     {
       id: 6,
