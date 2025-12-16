@@ -82,13 +82,13 @@ export default function AboutSection() {
               })}
             </div>
 
-            <p className="text-gray-400 leading-relaxed">
+            {/* <p className="text-gray-400 leading-relaxed">
               Officiis eligendi itaque labore et dolorum mollitia officiis optio
               vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
               incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
               maxime officiis quidem quia. Sed et consectetur qui quia
               repellendus itaque neque.
-            </p>
+            </p> */}
           </div>
         </div>
 
