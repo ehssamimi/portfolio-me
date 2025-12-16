@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { Code, Palette, Boxes, Sparkles } from "lucide-react";
 import {
   RiNextjsFill,
   RiGithubFill,
@@ -65,8 +64,8 @@ export default function SkillsSection() {
   const displayedSkills = showAll ? skills : skills.slice(0, 4);
 
   return (
-    <section className="relative font-[raleway] z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-90]">
-      <div className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden max-w-[1280px] m-auto max-sm:mt-[-130]">
+    <section className="relative font-[raleway] z-20 w-full bg-[#0b1120] max-sm:py-12 overflow-hidden max-sm:mt-[-90]">
+      <div className="max-sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden max-w-[1280px] m-auto max-sm:mt-[-130]">
         <div className="text-center mb-10">
           <h2 className="text-4xl sm:text-5xl  text-white mb-4">
             Technical{" "}
@@ -107,7 +106,7 @@ export default function SkillsSection() {
         <div className="mt-14 flex justify-center">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-6 py-3 rounded-full z-30 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold hover:scale-105 transition-all shadow-md"
+            className="px-6 py-3 rounded-full z-30 bg-gray-800 text-white font-semibold hover:scale-105 transition-all shadow-md"
           >
             {showAll ? "Show Less" : "Show More"}
           </button>

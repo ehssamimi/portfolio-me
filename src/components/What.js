@@ -46,7 +46,7 @@ const WhatIDo = () => {
             <motion.div
               key={index}
               className="relative group p-6 text-gray-200 transition-all duration-500
-      bg-white/5 backdrop-blur-lg
+      bg-white/4 backdrop-blur-lg
       border border-white/10
       rounded-[4%_25%_4%_25%]
       hover:shadow-lg hover:bg-white/10"

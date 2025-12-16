@@ -6,13 +6,24 @@ import { motion } from "framer-motion";
 export default function ProjectsSection() {
   const projects = [
     {
-      id: 1,
-      title: "ZarinPal Website",
+          
+      id: 5,
+      title: "a-world",
       description:
-        "A simple e-commerce website inspired by Zarinpal, built using only HTML and CSS. It was one of my first projects and is part of my portfolio to showcase early work and growth in web development",
-      image: "/projects/zarinpal.png",
-      tags: ["HTML", "CSS.module", " Responsive Design"],
-      demo: "https://gleeful-ganache-ec0db5.netlify.app",
+        "**A-World** is an engaging platform for travel and camping enthusiasts, offering adventurous experiences, travel tips, and exciting routes in a fully responsive design. Users can easily enjoy travel and camping content on any device.",
+      image: "/projects/a-world.png",
+      tags: ["JavaScript ", "Css", "Html", "Responsive"],
+      demo: "https://a-world-rho.vercel.app",
+    },
+  
+      {
+      id: 6,
+      title: "Wealzi",
+      description:
+        "At Wealzi, we have taken a new step in providing investment and portfolio management services by creating a secure platform for digital asset investment. We consider it our mission to guide all stages of investment with intelligence and simplicity, enhancing investment capabilities for people from all walks of life.",
+      image: "/projects/wealzi.png",
+      tags: ["Next.js ", "Tailwind", "Responsive"],
+      demo: "https://tredfi-wealzi.vercel.app",
     },
     {
       id: 2,
@@ -42,28 +53,20 @@ export default function ProjectsSection() {
       demo: "https://medic-care-alpha.vercel.app",
     },
     {
-      id: 5,
-      title: "a-world",
+      id: 1,
+      title: "ZarinPal Website",
       description:
-        "**A-World** is an engaging platform for travel and camping enthusiasts, offering adventurous experiences, travel tips, and exciting routes in a fully responsive design. Users can easily enjoy travel and camping content on any device.",
-      image: "/projects/a-world.png",
-      tags: ["JavaScript ", "Css", "Html", "Responsive"],
-      demo: "https://a-world-rho.vercel.app",
+        "A simple e-commerce website inspired by Zarinpal, built using only HTML and CSS. It was one of my first projects and is part of my portfolio to showcase early work and growth in web development",
+      image: "/projects/zarinpal.png",
+      tags: ["HTML", "CSS.module", " Responsive Design"],
+      demo: "https://gleeful-ganache-ec0db5.netlify.app",
     },
-    {
-      id: 6,
-      title: "Wealzi",
-      description:
-        "At Wealzi, we have taken a new step in providing investment and portfolio management services by creating a secure platform for digital asset investment. We consider it our mission to guide all stages of investment with intelligence and simplicity, enhancing investment capabilities for people from all walks of life.",
-      image: "/projects/wealzi.png",
-      tags: ["Next.js ", "Tailwind", "Responsive"],
-      demo: "https://tredfi-wealzi.vercel.app",
-    },
+
   ];
 
   return (
     <section className="relative z-20 w-full bg-[#0b1120] py-12 overflow-hidden max-sm:mt-[-50] font-[raleway]">
-      <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-[1280px] m-auto z-20 bg-[#0b1120]">
+      <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-[1280px] m-auto z-20 ">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl  text-white mb-4">
             Featured{" "}
@@ -81,7 +84,7 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="group relative bg-white/6 backdrop-blur-sm rounded-3xl overflow-hidden border-white/10 border-1 transform hover:-translate-y-2 transition-all duration-300"
+              className="group relative bg-white/4 backdrop-blur-sm rounded-3xl overflow-hidden border-white/10 border-1 transform hover:-translate-y-2 transition-all duration-300"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

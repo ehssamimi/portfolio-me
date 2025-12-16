@@ -82,7 +82,7 @@ export default function AboutSection() {
               })}
             </div>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed" >
          I view front-end development as a craft where technical logic meets visual artistry. I thrive on the challenge of bridging the gap between design concepts and high-performance, accessible user experiences. What truly drives me is tackling complex UI/UX problems and ensuring a fluid experience in large-scale applications, all while constantly pursuing cleaner code architecture and staying on the cutting edge of modern standards. Beyond the technology stack, I seek to collaborate with organizations that prioritize integrity, ethical innovation, and a tangible commitment to positive social impact.
             </p>
           </div>
