@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Copyright Notice */}
           <div className="text-center md:text-left">
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm text-gray-400 dark:text-gray-400">
               © {currentYear} Maysam Ghaysari. All Rights Reserved.
             </p>
           </div>
@@ -18,19 +18,19 @@ const Footer = () => {
           <nav className="flex gap-6">
             <a
               href="#projects"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+              className="text-sm text-gray-400 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
             >
               Projects
             </a>
             <a
               href="#about"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+              className="text-sm text-gray-400 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
             >
               About Me
             </a>
             <a
               href="#contact"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+              className="text-sm text-gray-400 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
             >
               Contact
             </a>
@@ -43,7 +43,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
-              className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+              className="text-gray-400 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
             >
               <Github />
             </a>
@@ -52,7 +52,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
-              className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+              className="text-gray-400 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
             >
               <Linkedin />
             </a>
@@ -61,7 +61,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="instagram Profile"
-              className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+              className="text-gray-400 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
             >
               <Instagram />
             </a>

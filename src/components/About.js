@@ -60,12 +60,9 @@ export default function AboutSection() {
           {/* Info Section */}
           <div>
             <h2 className="text-3xl font-bold text-gray-100 mb-4">
-             Front-End & Web Developer.
+             Front-End & Web Developer
             </h2>
-            <p className="text-gray-400 italic mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+         
 
             {/* Personal Details Grid */}
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
