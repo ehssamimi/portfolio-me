@@ -41,10 +41,7 @@ export default function AboutSection() {
 
         {/* Intro Text */}
         <p className="text-center text-gray-400 mb-16 max-w-4xl mx-auto leading-relaxed">
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
+       I am highly interested in front-end development. I enjoy creating engaging and user-friendly interfaces and focusing on the overall user experience (UX). I am passionate about turning design concepts into interactive web applications using modern technologies.
         </p>
 
         {/* Main Content */}
