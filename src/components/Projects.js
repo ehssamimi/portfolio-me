@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
   const projects = [
+       {
+          
+      id: 7,
+      title: "Coffe-Store",
+      description:
+        "Full-Stack Professional E-Commerce Platform A high-performance system built with Next.js and MongoDB, featuring professional Auth, advanced Filtering/Search, and a dynamic Shopping Cart. It includes dedicated Admin/User panels, SEO-friendly Blogs, and a Ticket system, all wrapped in a fully responsive, Mobile-First design.",
+      image: "/projects/Coffee.png",
+      tags: ["Next.js ", "Authentication", "MongoDB",],
+      demo: "https://coffe-shop-six-beta.vercel.app",
+    },
     {
           
       id: 5,
