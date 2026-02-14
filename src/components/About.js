@@ -6,11 +6,12 @@ import {
   GraduationCap,
   Mail,
   Briefcase,
-  Smile,
-  FileText,
-  Headphones,
-  Users,
+  // Smile,
+  // FileText,
+  // Headphones,
+  // Users,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
   // const stats = [
@@ -25,7 +26,11 @@ export default function AboutSection() {
     { icon: Globe, label: "Website", value: "-" },
     { icon: Phone, label: "Phone", value: "+989383044158" },
     { icon: MapPin, label: "City", value: "saqqez city , Kordestan, IRAN" },
-    { icon: GraduationCap, label: "Degree", value: "Pursuing a Bacgelor's degree in IT engineering" },
+    {
+      icon: GraduationCap,
+      label: "Degree",
+      value: "Pursuing a Bacgelor's degree in IT engineering",
+    },
     { icon: Mail, label: "Email", value: "maysamghaysari80@gmail.com" },
     { icon: Briefcase, label: "Freelance", value: "Available" },
   ];
@@ -41,7 +46,10 @@ export default function AboutSection() {
 
         {/* Intro Text */}
         <p className="text-center text-gray-400 mb-16 max-w-4xl mx-auto leading-relaxed">
-       I am highly interested in front-end development. I enjoy creating engaging and user-friendly interfaces and focusing on the overall user experience (UX). I am passionate about turning design concepts into interactive web applications using modern technologies.
+          I am highly interested in front-end development. I enjoy creating
+          engaging and user-friendly interfaces and focusing on the overall user
+          experience (UX). I am passionate about turning design concepts into
+          interactive web applications using modern technologies.
         </p>
 
         {/* Main Content */}
@@ -49,10 +57,14 @@ export default function AboutSection() {
           {/* Profile Image */}
           <div className="flex justify-center items-start">
             <div className="w-full max-w-md">
-              <img
+              <Image
                 src="/Me/1000024341.jpg"
                 alt="Profile"
+                width={500} // عرض پایه برای محاسبه نسبت ابعاد
+                height={500} // ارتفاع پایه
                 className="w-full h-auto rounded-lg shadow-lg"
+                sizes="(max-width: 768px) 100vw, 448px" // بهینه‌سازی برای موبایل و دسکتاپ
+                priority // معمولاً تصاویر پروفایل در دید اول هستند
               />
             </div>
           </div>
@@ -60,9 +72,8 @@ export default function AboutSection() {
           {/* Info Section */}
           <div>
             <h2 className="text-3xl font-bold text-gray-100 mb-4">
-             Front-End & Web Developer
+              Front-End & Web Developer
             </h2>
-         
 
             {/* Personal Details Grid */}
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -82,8 +93,17 @@ export default function AboutSection() {
               })}
             </div>
 
-            <p className="text-gray-400 leading-relaxed" >
-         I view front-end development as a craft where technical logic meets visual artistry. I thrive on the challenge of bridging the gap between design concepts and high-performance, accessible user experiences. What truly drives me is tackling complex UI/UX problems and ensuring a fluid experience in large-scale applications, all while constantly pursuing cleaner code architecture and staying on the cutting edge of modern standards. Beyond the technology stack, I seek to collaborate with organizations that prioritize integrity, ethical innovation, and a tangible commitment to positive social impact.
+            <p className="text-gray-400 leading-relaxed">
+              I view front-end development as a craft where technical logic
+              meets visual artistry. I thrive on the challenge of bridging the
+              gap between design concepts and high-performance, accessible user
+              experiences. What truly drives me is tackling complex UI/UX
+              problems and ensuring a fluid experience in large-scale
+              applications, all while constantly pursuing cleaner code
+              architecture and staying on the cutting edge of modern standards.
+              Beyond the technology stack, I seek to collaborate with
+              organizations that prioritize integrity, ethical innovation, and a
+              tangible commitment to positive social impact.
             </p>
           </div>
         </div>
