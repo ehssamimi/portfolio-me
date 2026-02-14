@@ -5,33 +5,31 @@ import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
   const projects = [
-       {
-          
+    {
       id: 7,
       title: "Coffe-Store",
       description:
         "Full-Stack Professional E-Commerce Platform A high-performance system built with Next.js and MongoDB, featuring professional Auth, advanced Filtering/Search, and a dynamic Shopping Cart. It includes dedicated Admin/User panels, SEO-friendly Blogs, and a Ticket system, all wrapped in a fully responsive, Mobile-First design.",
-      image: "/projects/Coffee.png",
-      tags: ["Next.js ", "Authentication", "MongoDB",],
+      image: "/projects/Coffee.webp",
+      tags: ["Next.js ", "Authentication", "MongoDB"],
       demo: "https://coffe-shop-six-beta.vercel.app",
     },
     {
-          
       id: 5,
       title: "a-world",
       description:
         "**A-World** is an engaging platform for travel and camping enthusiasts, offering adventurous experiences, travel tips, and exciting routes in a fully responsive design. Users can easily enjoy travel and camping content on any device.",
-      image: "/projects/a-world.png",
+      image: "/projects/a-world.webp",
       tags: ["JavaScript ", "Css", "Html", "Responsive"],
       demo: "https://a-world-rho.vercel.app",
     },
-  
-      {
+
+    {
       id: 6,
       title: "Wealzi",
       description:
         "At Wealzi, we have taken a new step in providing investment and portfolio management services by creating a secure platform for digital asset investment. We consider it our mission to guide all stages of investment with intelligence and simplicity, enhancing investment capabilities for people from all walks of life.",
-      image: "/projects/wealzi.png",
+      image: "/projects/wealzi.webp",
       tags: ["Next.js ", "Tailwind", "Responsive"],
       demo: "https://tredfi-wealzi.vercel.app",
     },
@@ -40,7 +38,7 @@ export default function ProjectsSection() {
       title: " Delta.app",
       description:
         "I recreated the landing page of Delta.app using Next.js and Tailwind CSS to practice building pixel-perfect, responsive interfaces. The goal of this project was to replicate the modern and clean design of the original site while focusing on component structure, layout optimization, and responsive design",
-      image: "/projects/homepage.png",
+      image: "/projects/homepage.webp",
       tags: ["NEXT.JS", "Tailwind css", " Responsive Design"],
       demo: "https://tourmaline-bunny-6ae6e6.netlify.app",
     },
@@ -49,7 +47,7 @@ export default function ProjectsSection() {
       title: "Book Store Demo App",
       description:
         "A responsive Book Store web app built with React and CSS. It includes a separate search page, detailed product pages with comments, user authentication (login & signup), favorites, cart system, and advanced filtering options.This is a demo version, so some features are not fully functional yet.",
-      image: "/projects/book.png",
+      image: "/projects/book.webp",
       tags: ["React.js", "Axios", "Fake Api", "Css Module"],
       demo: "https://steady-treacle-0fd54a.netlify.app",
     },
@@ -58,7 +56,7 @@ export default function ProjectsSection() {
       title: "Madic care",
       description:
         "Medical Care is a simple and fully responsive healthcare website. It delivers essential medical information with a clean layout and smooth usability across mobile, tablet, and desktop.",
-      image: "/projects/Madic-Care.png",
+      image: "/projects/Madic-Care.webp",
       tags: ["JavaScript ", "Css", "Html", "Responsive"],
       demo: "https://medic-care-alpha.vercel.app",
     },
@@ -67,11 +65,10 @@ export default function ProjectsSection() {
       title: "ZarinPal Website",
       description:
         "A simple e-commerce website inspired by Zarinpal, built using only HTML and CSS. It was one of my first projects and is part of my portfolio to showcase early work and growth in web development",
-      image: "/projects/zarinpal.png",
+      image: "/projects/zarinpal.webp",
       tags: ["HTML", "CSS.module", " Responsive Design"],
       demo: "https://gleeful-ganache-ec0db5.netlify.app",
     },
-
   ];
 
   return (
