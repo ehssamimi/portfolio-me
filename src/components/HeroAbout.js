@@ -11,6 +11,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function HeroAbout() {
   const socialLinks = [
@@ -65,11 +66,15 @@ export default function HeroAbout() {
     <section className="relative h-screen w-full">
       {/* Background Image */}
       <div className="fixed right-0 bottom-0 w-1/3 h-full hidden lg:block opacity-30 z-0 pointer-events-none">
-        <img
-          src="/Me/1000009466.jpg"
+        <Image
+          src="/Me/1000009466.jpg" // مسیر تصویر در پوشه public
           alt="Background"
-          className="h-full w-full object-cover object-left"
-          style={{ boxShadow: "-18px 0 130px rgba(220,220,220,0.9)" }}
+          fill // جایگزین h-full w-full برای پر کردن والد
+          priority // اگر این تصویر در دید اول کاربر (Above the fold) است
+          className="object-cover object-left"
+          style={{
+            boxShadow: "-18px 0 130px rgba(220,220,220,0.9)",
+          }}
         />
       </div>
 
