@@ -38,7 +38,7 @@ export default function AboutSection() {
     { icon: Calendar, label: "Birthday", value: "31 March 2001" },
     { icon: Globe, label: "Website", value: "-" },
     { icon: Phone, label: "Phone", value: "+989383044158" },
-    { icon: MapPin, label: "City", value: "saqqez city , Kordestan, IRAN" },
+    { icon: MapPin, label: "City", value: "saqqez city , Kurdestan, IRAN" },
     {
       icon: GraduationCap,
       label: "Degree",
@@ -71,7 +71,7 @@ export default function AboutSection() {
           <div className="flex justify-center items-start">
             <div className="w-full max-w-md">
               <Image
-                src="/Me/1000024341.webp"
+                src="/Me/1111.webp"
                 alt="Profile"
                 width={500} // عرض پایه برای محاسبه نسبت ابعاد
                 height={500} // ارتفاع پایه
