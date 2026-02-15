@@ -50,7 +50,7 @@ export default function SkillsSection() {
       icon: CiGrid42,
     },
     {
-      name: "Responsive Design",
+      name: "Responsive",
       color: "from-blue-600 to-blue-800",
       icon: DiResponsive,
     },
