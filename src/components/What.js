@@ -4,6 +4,19 @@ import { PiCode } from "react-icons/pi";
 import { MdNetworkCheck } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
 import React from "react";
+export const metadata = {
+  title:
+    "میثم قیصری | توسعه‌دهنده فرانت‌اند | Next.js & React | maysam ghaysari",
+  description:
+    "میثم قیصری - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
+  openGraph: {
+    title: "میثم قیصری - پورتفولیو - maysam ghaysari",
+    description: "...",
+    url: "https://maysamghaysari.ir",
+    siteName: "میثم قیصری | maysam ghaysari",
+    type: "website",
+  },
+};
 
 const WhatIDo = () => {
   const services = [

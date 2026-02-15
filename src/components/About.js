@@ -13,6 +13,19 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+export const metadata = {
+  title:
+    "میثم قیصری | توسعه‌دهنده فرانت‌اند | Next.js & React | maysam ghaysari",
+  description:
+    "میثم قیصری - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
+  openGraph: {
+    title: "میثم قیصری - پورتفولیو - maysam ghaysari",
+    description: "...",
+    url: "https://maysamghaysari.ir",
+    siteName: "میثم قیصری | maysam ghaysari",
+    type: "website",
+  },
+};
 export default function AboutSection() {
   // const stats = [
   //   { icon: Smile, number: 232, label: "Happy Clients" },
