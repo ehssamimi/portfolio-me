@@ -152,7 +152,7 @@ export default function HeroAbout() {
           </motion.div>
 
           {/* Scroll Down */}
-          <motion.div {...bounceArrow} className="mt-20">
+          <motion.div {...bounceArrow} className="mt-30">
             <ArrowDown className="mx-auto text-white/60" size={32} />
           </motion.div>
         </div>
