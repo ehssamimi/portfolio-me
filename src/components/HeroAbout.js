@@ -28,7 +28,7 @@ export default function HeroAbout() {
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/maysam-ghaysari-227676367",
+      href: "https://linkedin.com/in/maysam-ghaysari",
       label: "LinkedIn",
     },
   ];
