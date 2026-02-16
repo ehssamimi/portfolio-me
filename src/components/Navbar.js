@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Menu, X,  } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +67,7 @@ export default function Navbar() {
         <div className="px-4 pt-2 pb-4 space-y-3 backdrop-blur-md border-t border-gray-400">
           {/* Download Resume - Mobile */}
           <a
-            href="/Resume/MyResume.pdf"
+            href="/Resume/RESUME-frontend.pdf"
             download
             className=" items-center flex justify-center bg-white/5 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/10 p-3  transition-all duration-300"
           >

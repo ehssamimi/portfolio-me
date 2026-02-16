@@ -35,8 +35,8 @@ export default function HeroAbout() {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Resume/MyResume.pdf";
-    link.download = "My-Resume.pdf";
+    link.href = "/Resume/RESUME-frontend.pdf";
+    link.download = "RESUME-frontend.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
