@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className="flex gap-4">
             <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
               <a
-                href="/Resume/MyResume.pdf"
+                href="/Resume/RESUME-frontend.pdf"
                 download
                 className="inline-flex items-center  bg-white/5 backdrop-blur-sm border border-white/10 text-gray-300 rounded-full hover:bg-white/10 p-3  transition-all duration-300"
               >

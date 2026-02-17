@@ -1,7 +1,23 @@
 "use client";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title:
+    "میثم قیصری | توسعه‌دهنده فرانت‌اند | Next.js & React | maysam ghaysari",
+  description:
+    "میثم قیصری - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
+  openGraph: {
+    title: "میثم قیصری - پورتفولیو - maysam ghaysari",
+    description: "...",
+    url: "https://maysamghaysari.ir",
+    siteName: "میثم قیصری | maysam ghaysari",
+    images: [<Image src="/Me/maysam-ghaysari.webp" alt="My Image" fill />],
+    locale: "fa_IR",
+    type: "website",
+  },
+};
 export default function ProjectsSection() {
   const projects = [
     {
@@ -42,7 +58,6 @@ export default function ProjectsSection() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-[1280px] m-auto ">
       <div>
-
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">

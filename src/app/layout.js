@@ -22,7 +22,7 @@ export const metadata = {
     description: "...",
     url: "https://maysamghaysari.ir",
     siteName: "میثم قیصری | maysam ghaysari",
-    images: [<Image src="/Me/1000009466.jpg" alt="My Image" fill />],
+    images: [<Image src="/Me/maysam-ghaysari.webp" alt="My Image" fill />],
     locale: "fa_IR",
     type: "website",
   },

@@ -71,8 +71,8 @@ export default function AboutSection() {
           <div className="flex justify-center items-start">
             <div className="w-full max-w-md">
               <Image
-                src="/Me/1111.webp"
-                alt="Profile"
+                src="/Me/maysam-ghaysari.webp"
+                alt="maysam ghaysari"
                 width={500} // عرض پایه برای محاسبه نسبت ابعاد
                 height={500} // ارتفاع پایه
                 className="w-full h-auto rounded-lg shadow-lg"
