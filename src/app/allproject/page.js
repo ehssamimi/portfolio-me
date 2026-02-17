@@ -1,23 +1,7 @@
 "use client";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
-export const metadata = {
-  title:
-    "میثم قیصری | توسعه‌دهنده فرانت‌اند | Next.js & React | maysam ghaysari",
-  description:
-    "میثم قیصری - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
-  openGraph: {
-    title: "میثم قیصری - پورتفولیو - maysam ghaysari",
-    description: "...",
-    url: "https://maysamghaysari.ir",
-    siteName: "میثم قیصری | maysam ghaysari",
-    images: [<Image src="/Me/maysam-ghaysari.webp" alt="My Image" fill />],
-    locale: "fa_IR",
-    type: "website",
-  },
-};
 export default function ProjectsSection() {
   const projects = [
     {
