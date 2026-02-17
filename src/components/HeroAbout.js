@@ -67,8 +67,8 @@ export default function HeroAbout() {
       {/* Background Image */}
       <div className="fixed right-0 bottom-0 w-1/3 h-full hidden lg:block opacity-30 z-0 pointer-events-none">
         <Image
-          src="/Me/1000009466.webp" // مسیر تصویر در پوشه public
-          alt="Background"
+          src="/Me/maysamghaysari.webp" // مسیر تصویر در پوشه public
+          alt="My Image"
           fill // جایگزین h-full w-full برای پر کردن والد
           priority // اگر این تصویر در دید اول کاربر (Above the fold) است
           className="object-cover object-left"
