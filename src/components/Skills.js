@@ -9,9 +9,10 @@ import {
   RiServerLine,
 } from "react-icons/ri";
 import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io";
+import { SiTypescript, SiReactquery, SiMongodb } from "react-icons/si";
+import { LuTabletSmartphone } from "react-icons/lu";
 import { GrGraphQl } from "react-icons/gr";
 import { CiGrid42 } from "react-icons/ci";
-import { DiResponsive } from "react-icons/di";
 import { IoServerOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 
@@ -25,6 +26,21 @@ export default function SkillsSection() {
       name: "JavaScript",
       color: "from-yellow-500 to-orange-500",
       icon: IoLogoJavascript,
+    },
+    {
+      name: "TypeScript",
+      color: "from-blue-500 to-blue-500",
+      icon: SiTypescript,
+    },
+    {
+      name: "ReactQuery",
+      color: "from-blue-500 to-blue-500",
+      icon: SiReactquery,
+    },
+    {
+      name: "MongoDB",
+      color: "from-green-500 to-green-500",
+      icon: SiMongodb,
     },
     { name: "HTML", color: "from-orange-500 to-red-500", icon: RiHtml5Fill },
     { name: "CSS", color: "from-blue-500 to-cyan-500", icon: IoLogoCss3 },
@@ -52,7 +68,7 @@ export default function SkillsSection() {
     {
       name: "Responsive",
       color: "from-blue-600 to-blue-800",
-      icon: DiResponsive,
+      icon: LuTabletSmartphone,
     },
     {
       name: "Git & GitHub",
