@@ -145,44 +145,36 @@ export default function ProjectsSection() {
             {visibleProjects.map((project, index) => (
               <motion.div
                 key={project.id}
-                layout // انیمیشن جابه‌جایی نرم
+                layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="group relative bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 transform hover:-translate-y-2 transition-all duration-300"
+                className="group relative bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:-translate-y-2 transition-all duration-300 flex flex-col"
               >
-                {/* بخش تصویر */}
+                {/* تصویر */}
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-
-                  <div className="absolute inset-0 hidden md:flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a
-                      target="_blank"
-                      href={project.demo}
-                      className="p-3 bg-blue-600 rounded-full hover:bg-blue-700 transform hover:scale-110 transition-all duration-200 shadow-lg"
-                    >
-                      <ExternalLink className="text-white" size={20} />
-                    </a>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent" />
                 </div>
 
-                {/* توضیحات */}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+                {/* محتوا + دکمه */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
                     {project.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2">
+                  {/* تگ‌ها */}
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.map((tag, idx) => (
                       <span
                         key={idx}
@@ -192,6 +184,17 @@ export default function ProjectsSection() {
                       </span>
                     ))}
                   </div>
+
+                  {/* دکمه اصلی */}
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-2 bg-[#0b1120] hover:bg-[#192741] text-blue-300 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-0.5"
+                  >
+                    View Demo
+                    <ExternalLink size={18} />
+                  </a>
                 </div>
               </motion.div>
             ))}
