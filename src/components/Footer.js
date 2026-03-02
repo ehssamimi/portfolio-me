@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Copyright Notice */}
           <div className="text-center md:text-left">
             <p className="text-sm text-gray-400 dark:text-gray-400">
-              © {currentYear} Maysam Ghaysari. All Rights Reserved.
+              © {currentYear} Ehsan Samimi Rad. All Rights Reserved.
             </p>
           </div>
 

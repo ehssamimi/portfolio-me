@@ -14,14 +14,14 @@ const caveat = Caveat({
 
 export const metadata = {
   title:
-    "میثم قیصری | توسعه‌دهنده فرانت‌اند | Next.js & React | maysam ghaysari",
+    "احسان صمیمی راد  | توسعه‌دهنده فرانت‌اند | Next.js & React | Ehsan Samimi Rad",
   description:
-    "میثم قیصری - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
+    "احسان صمیمی راد  - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
   openGraph: {
-    title: "میثم قیصری - پورتفولیو - maysam ghaysari",
+    title: "احسان صمیمی راد  - پورتفولیو - Ehsan Samimi Rad",
     description: "...",
     url: "https://maysamghaysari.ir",
-    siteName: "میثم قیصری | maysam ghaysari",
+    siteName: "احسان صمیمی راد  | Ehsan Samimi Rad",
     images: [<Image src="/Me/maysam-ghaysari.webp" alt="My Image" fill />],
     locale: "fa_IR",
     type: "website",
@@ -32,8 +32,8 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "میثم قیصری",
-    alternateName: "Maysam Ghaysari",
+    name: "احسان صمیمی راد ",
+    alternateName: "Ehsan Samimi Rad",
     jobTitle: "توسعه‌دهنده فرانت‌اند | Frontend Developer",
     url: "https://maysamghaysari.ir",
     sameAs: [

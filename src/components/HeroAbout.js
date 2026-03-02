@@ -95,7 +95,7 @@ export default function HeroAbout() {
             className="text-4xl max-sm:text-5xl md:text-6xl lg:text-8xl text-white mb-4 leading-tight"
           >
             <span className="bg-white bg-clip-text text-transparent font-[Caveat]">
-              Maysam Ghaysari
+              Ehsan Samimi Rad
             </span>
           </motion.h1>
 

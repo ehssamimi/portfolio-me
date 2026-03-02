@@ -6,14 +6,14 @@ import { GrProjects } from "react-icons/gr";
 import React from "react";
 export const metadata = {
   title:
-    "میثم قیصری | توسعه‌دهنده فرانت‌اند | Next.js & React | maysam ghaysari",
+    "احسان صمیمی راد  | توسعه‌دهنده فرانت‌اند | Next.js & React | Ehsan Samimi Rad",
   description:
-    "میثم قیصری - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
+    "احسان صمیمی راد  - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
   openGraph: {
-    title: "میثم قیصری - پورتفولیو - maysam ghaysari",
+    title: "احسان صمیمی راد  - پورتفولیو - Ehsan Samimi Rad",
     description: "...",
     url: "https://maysamghaysari.ir",
-    siteName: "میثم قیصری | maysam ghaysari",
+    siteName: "احسان صمیمی راد  | Ehsan Samimi Rad",
     type: "website",
   },
 };

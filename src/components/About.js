@@ -15,14 +15,14 @@ import Image from "next/image";
 
 export const metadata = {
   title:
-    "میثم قیصری | توسعه‌دهنده فرانت‌اند | Next.js & React | maysam ghaysari",
+    "احسان صمیمی راد  | توسعه‌دهنده فرانت‌اند | Next.js & React | Ehsan Samimi Rad",
   description:
-    "میثم قیصری - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
+    "احسان صمیمی راد  - برنامه‌نویس وب با تمرکز روی Next.js، React، Tailwind ، TypeScript   . مشاهده پروژه‌ها، رزومه و راه‌های ارتباط.",
   openGraph: {
-    title: "میثم قیصری - پورتفولیو - maysam ghaysari",
+    title: "احسان صمیمی راد  - پورتفولیو - Ehsan Samimi Rad",
     description: "...",
     url: "https://maysamghaysari.ir",
-    siteName: "میثم قیصری | maysam ghaysari",
+    siteName: "احسان صمیمی راد  | Ehsan Samimi Rad",
     type: "website",
   },
 };
@@ -72,7 +72,7 @@ export default function AboutSection() {
             <div className="w-full max-w-md">
               <Image
                 src="/Me/maysam-ghaysari.webp"
-                alt="maysam ghaysari"
+                alt="Ehsan Samimi Rad"
                 width={500} // عرض پایه برای محاسبه نسبت ابعاد
                 height={500} // ارتفاع پایه
                 className="w-full h-auto rounded-lg shadow-lg"

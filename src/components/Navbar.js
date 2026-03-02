@@ -19,7 +19,7 @@ export default function Navbar() {
                 <span className="text-white text-xl font-[raleway] ">M</span>
               </div>
               <span className="text-xl font-[raleway]  bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent sm:block">
-                Maysam Ghaysari
+                Ehsan Samimi Rad
               </span>
             </a>
           </div>
