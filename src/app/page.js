@@ -6,7 +6,8 @@ import Navbar from "@/components/Navbar";
 import ProjectsSection from "@/components/Projects";
 import RoadmapPage from "@/components/RoadmapPage";
 import SkillsSection from "@/components/Skills";
-import WhatIDo from "@/components/What";
+// import WhatIDo from "@/components/What";
+import Experience from "@/components/Experience";
 export const metadata = {
   title:
     "احسان صمیمی راد  | توسعه‌دهنده فرانت‌اند | Next.js & React | Ehsan Samimi Rad",
@@ -51,11 +52,13 @@ export default function Home() {
       />
       <Navbar />
       <HeroAbout />
-      <WhatIDo />
-      <RoadmapPage />
+      <About />
+      {/* <WhatIDo /> */}
+      <Experience />
+      {/* <RoadmapPage /> */}
       <ProjectsSection />
       <SkillsSection />
-      <About />
+     
       <ContactMe />
       <Footer />
     </>
